@@ -1,2 +1,2 @@
 # volley
-Game Maker Studio 2 test project Volleyball
+Simple Game Maker Studio 2 project to learn GML and IDE tools
