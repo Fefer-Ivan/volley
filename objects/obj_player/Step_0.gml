@@ -1,3 +1,9 @@
+var clamp_x = clamp(phy_position_x, sprite_xoffset, room_width - sprite_xoffset);
+if (clamp_x != phy_position_x) {
+	phy_position_x = clamp_x;
+	phy_speed_x = 0;
+}
+
 if (!global.game_is_live) {
 	return;
 }
