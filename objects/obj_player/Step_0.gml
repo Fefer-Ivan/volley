@@ -71,8 +71,14 @@ if (strike_action != strike_type.none) {
 			if (towards_speed >= 0) {
 				x_multiplier = towards_speed * pass_speed_multiplier;
 			}
+			var max_secondary_impulse = pass_max_x_impulse;
 			with (obj_ball) {
-				physics_apply_impulse(x, y, dir * secondary_impulse * x_multiplier, -impulse);
+				physics_apply_impulse(
+					x,
+					y,
+					dir * min(max_secondary_impulse, secondary_impulse * x_multiplier),
+					-impulse
+				);
 			}	
 			break;
 	}

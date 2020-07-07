@@ -354,6 +354,20 @@
             "varType": 0
         },
         {
+            "id": "66a35980-65fd-4bae-aa54-9bf4a20c8513",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1100",
+            "varName": "pass_max_x_impulse",
+            "varType": 0
+        },
+        {
             "id": "acc391ea-8c65-44bf-9a6a-261f48384851",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

@@ -21,7 +21,7 @@ var target_x_in_out =
 	(opponent_direction == 1 && target_x < our_field_left_x) ||
 	(opponent_direction == -1 && target_x > our_field_right_x);
 if (target_x_on_opponent ||
-	(target_x_in_out && obj_ball.last_touch_player_id == id)) {
+	(target_x_in_out && obj_ball.last_touch_player_id != id)) {
 	target_x = (our_field_left_x + our_field_right_x) / 2;
 }
 
