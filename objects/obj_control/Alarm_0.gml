@@ -1,1 +1,1 @@
-scr_start_round(serving_player, player_left, player_right);
+scr_start_round(serving_player, players);

@@ -10,7 +10,7 @@ if (ball.last_touch_player_id == player_id) {
 	ball.touches_left -= 1;
 	if (ball.touches_left < 0) {
 		var scoring_player = 0;
-		if (ball.last_touch_player_id == obj_control.player_left.id) {
+		if (ball.last_touch_player_id == obj_control.players[0].id) {
 			scoring_player = 1;
 		}
 		scr_finish_round("fault", scoring_player);
