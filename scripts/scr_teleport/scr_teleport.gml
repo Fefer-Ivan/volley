@@ -1,3 +1,7 @@
+/// @arg object
+/// @arg target_x
+/// @arg target_y
+
 argument0.phy_active = false;
 argument0.phy_position_x = argument1;
 argument0.phy_position_y = argument2;

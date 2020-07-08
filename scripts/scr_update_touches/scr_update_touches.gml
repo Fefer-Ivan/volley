@@ -1,4 +1,6 @@
-//scr_update_touches(ball, player_id);
+/// @arg ball
+/// @arg player_id
+
 var ball = argument0;
 var player_id = argument1;
 

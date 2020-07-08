@@ -1,8 +1,8 @@
 {
-    "id": "a6445757-f837-46f2-b5d9-16b23eb1ae49",
+    "id": "5a9c107c-ba28-4fc7-b309-cc8103f8396f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_draw_player_row",
+    "name": "scr_is_set_point",
     "IsCompatibility": false,
     "IsDnD": false
 }

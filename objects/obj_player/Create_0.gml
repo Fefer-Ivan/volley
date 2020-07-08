@@ -8,6 +8,10 @@ enum strike_type {
 phy_fixed_rotation = true;
 
 game_score = 0;
+set_score = 0;
+set_point_count = 0;
+match_point_count = 0;
+special_point_message = "";
 
 going_left = false;
 going_right = false;

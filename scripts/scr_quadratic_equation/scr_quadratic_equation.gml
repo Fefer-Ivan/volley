@@ -1,4 +1,8 @@
-//scr_quadratic_equasion(a, b, c);
+/// @desc Return positive root of quadratic equation ax^2 + bx + c = 0
+/// @arg a
+/// @arg b
+/// @arg c
+
 var a = argument0;
 var b = argument1;
 var c = argument2;

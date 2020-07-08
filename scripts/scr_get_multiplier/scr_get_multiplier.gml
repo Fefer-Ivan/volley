@@ -1,4 +1,6 @@
-//scr_get_multiplier(min_value, max_value, dist)
+/// @arg min_value
+/// @arg max_value
+/// @arg dist
 
 var min_value = argument0;
 var max_value = argument1;

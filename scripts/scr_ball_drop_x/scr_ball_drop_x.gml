@@ -1,4 +1,5 @@
-//scr_ball_drop_x(ball, target_y);
+/// @arg ball
+/// @arg target_y
 
 var ball = argument0;
 var target_y = argument1;

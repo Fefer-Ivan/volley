@@ -1,5 +1,6 @@
 /// @description Start game round
-// scr_start_round(serving_player, players)
+/// @arg serving_player
+/// @arg players
 
 var serving_player = argument0;
 var players = argument1;
