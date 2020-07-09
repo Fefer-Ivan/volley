@@ -1,5 +1,4 @@
-going_left = false;
-going_right = false;
+run_direction = 0;
 jumping = false;
 strike_action = strike_type.none;
 
@@ -25,11 +24,7 @@ if (target_x_on_opponent ||
 	target_x = (our_field_left_x + our_field_right_x) / 2;
 }
 
-if (target_x < x) {
-	going_left = true;
-} else {
-	going_right = true;
-}
+run_direction = sign(target_x - x);
 	
 if (obj_ball.x <= x &&
 	x <= obj_ball.x - 2 * opponent_direction * obj_ball.sprite_xoffset &&

@@ -202,7 +202,7 @@
             "Key": "8d45beac-ba40-469a-9d1f-17201619b6c6",
             "Value": {
                 "id": "a4532470-0695-47e7-9e15-082cc40c8d59",
-                "resourcePath": "objects\/obj_controller_player\/obj_controller_player.yy",
+                "resourcePath": "objects\/obj_controlled_player\/obj_controlled_player.yy",
                 "resourceType": "GMObject"
             }
         },

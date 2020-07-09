@@ -10,19 +10,12 @@ if (!global.game_is_live) {
 
 var on_land = physics_test_overlap(x, y + 1, 0, obj_floor);
 
-var go_x = 0;
-if (going_left) {
-	go_x -= 1;
-}
-if (going_right) {
-	go_x += 1;
-}
-if (go_x != 0) {
+if (run_direction != 0) {
 	var force = go_air_force;
 	if (on_land) {
 		force = go_land_force;
 	}
-	physics_apply_force(x, y, go_x * force, 0);
+	physics_apply_force(x, y, run_direction * force, 0);
 }
 
 if (on_land && jumping) {	

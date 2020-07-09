@@ -13,8 +13,7 @@ set_point_count = 0;
 match_point_count = 0;
 special_point_message = "";
 
-going_left = false;
-going_right = false;
+run_direction = 0;
 jumping = false;
 
 strike_action = strike_type.none;
