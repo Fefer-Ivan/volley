@@ -5,7 +5,7 @@
 var serving_player = argument0;
 var players = argument1;
 
-var field_size = 512;
+var field_size = 600;
 
 players[0].our_field_left_x = obj_net.x - field_size;
 players[0].our_field_right_x = obj_net.x;
@@ -25,9 +25,9 @@ start_x_player[1 - serving_player] = obj_net.x - players[1 - serving_player].opp
 var start_x_ball = start_x_player[serving_player];
 
 var start_y_ball = room_height - room_height / 4;
-with (instance_create_layer(start_x_ball, start_y_ball, "Instances", obj_ball)) {
-	phy_rotation = random_range(0, 360);
+with (instance_create_layer(start_x_ball, start_y_ball, "Instances", obj_ball)) {	
 	physics_apply_impulse(start_x_ball, start_y_ball, 0, -1000);
+	//phy_rotation = random_range(0, 360);
 	if (serving_player == 0) {
 		last_touch_player_id = players[0].id;
 	} else {

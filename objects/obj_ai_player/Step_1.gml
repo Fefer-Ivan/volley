@@ -35,19 +35,20 @@ if (obj_ball.x <= x &&
 }
 
 if (strike_available && distance_to_object(obj_ball) <= strike_range) {
-	var available_strikes = [];
-	if (obj_ball.last_touch_player_id != id || obj_ball.touches_left > 1) {
-		available_strikes[array_length_1d(available_strikes)] = strike_type.pass;
-	}	
 	if (obj_ball.y <= obj_net.y - obj_net.sprite_yoffset - obj_ball.sprite_yoffset - 10) {
-		available_strikes[array_length_1d(available_strikes)] = strike_type.forward;
-	}
-	if (sign(obj_ball.phy_speed_x) == 0 || sign(obj_ball.phy_speed_x) == opponent_direction) {
-		available_strikes[array_length_1d(available_strikes)] = strike_type.up;
-	}
+		strike_action = strike_type.forward;
+	} else {	
+		var available_strikes = [];
+		if (obj_ball.last_touch_player_id != id || obj_ball.touches_left > 1) {
+			available_strikes[array_length_1d(available_strikes)] = strike_type.pass;
+		}	
+		if (sign(obj_ball.phy_speed_x) == 0 || sign(obj_ball.phy_speed_x) == opponent_direction) {
+			available_strikes[array_length_1d(available_strikes)] = strike_type.up;
+		}
 	
-	var count = array_length_1d(available_strikes);
-	if (count > 0) {
-		strike_action = available_strikes[irandom(count-1)];
+		var count = array_length_1d(available_strikes);
+		if (count > 0) {
+			strike_action = available_strikes[irandom(count-1)];
+		}
 	}
 }

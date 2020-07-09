@@ -60,7 +60,7 @@
     "parentObjectId": "796afbf8-ccd3-407e-bc3f-965ab15363ef",
     "persistent": false,
     "physicsAngularDamping": 1000,
-    "physicsDensity": 2,
+    "physicsDensity": 4,
     "physicsFriction": 0.3,
     "physicsGroup": 0,
     "physicsKinematic": false,
@@ -153,7 +153,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1000",
+            "value": "500",
             "varName": "go_air_force",
             "varType": 0
         },
