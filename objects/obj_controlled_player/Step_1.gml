@@ -9,14 +9,7 @@ switch (control) {
 		}
 		jumping = keyboard_check(ord("W"));
 
-		strike_action = strike_type.none;
-		if (keyboard_check(ord("2"))) {
-			strike_action = strike_type.up;
-		} else if (keyboard_check(ord("E"))) {
-			strike_action = strike_type.forward;
-		} else if (keyboard_check(ord("Q"))) {
-			strike_action = strike_type.pass;
-		}
+		strike_boost = keyboard_check(ord("E"));
 		break;
 	case control_type.gamepad:		
 		run_direction = 0;
@@ -33,14 +26,7 @@ switch (control) {
 		jumping = gamepad_button_check(gamepad_device_id, gp_padu) ||
 				gamepad_button_check(gamepad_device_id, gp_face1) ||
 				gamepad_axis_value(gamepad_device_id, gp_axislv) < -0.8;
-			
-		strike_action = strike_type.none;
-		if (gamepad_button_check(gamepad_device_id, gp_face2)) {
-			strike_action = strike_type.up;
-		} else if (gamepad_button_check(gamepad_device_id, gp_face4)) {
-			strike_action = strike_type.forward;
-		} else if (gamepad_button_check(gamepad_device_id, gp_face3)) {
-			strike_action = strike_type.pass;
-		}
+		
+		strike_boost = gamepad_button_check(gamepad_device_id, gp_shoulderl)
 		break;
 }
