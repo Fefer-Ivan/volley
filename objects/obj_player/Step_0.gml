@@ -4,6 +4,16 @@ if (clamp_x != phy_position_x) {
 	phy_speed_x = 0;
 }
 
+var current_density = density;
+if (strike_boost) {
+	current_density *= 2;
+}
+for (var i = 0; i < array_length_1d(fixtures); i += 1) {
+	if (physics_get_density(fixtures[i]) != current_density) {
+		physics_set_density(fixtures[i], current_density);
+	}
+}
+
 if (!global.game_is_live) {
 	return;
 }

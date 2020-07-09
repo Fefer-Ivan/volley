@@ -9,7 +9,7 @@ jumping = false;
 strike_boost = false;
 
 fixtures = [];
-var density = 4;
+density = 4;
 var restitution = 0.1;
 var linear_damping = 0.5;
 var fix_friction = 0.3;
