@@ -7,7 +7,6 @@ set_score_to_win = 3;
 
 players = global.players;
 for (var i = 0; i < array_length_1d(players); ++i) {
-	players[i] = global.player_names[i];
 	var gamepad_id = global.players_gamepad_id[i];
 	if (gamepad_id != -1) {
 		players[i].gamepad_device_id = gamepad_id;		
