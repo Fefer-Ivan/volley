@@ -8,4 +8,5 @@ enum control_type {
 };
 
 control = control_type.keyboard;
+gamepad_device_id = -1;
 name = "Player 1";
